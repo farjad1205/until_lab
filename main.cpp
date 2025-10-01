@@ -27,9 +27,9 @@ int until(int x, function<int(int)> change, function<bool(int)> check)
 
 int main()
 {
-    assert(until(5, deuce, check100));
-    assert(until(2, deuce, check100));
-    assert(until(3, deuce, check100));
+    assert(until(5, deuce, check100) == 160);
+    assert(until(2, deuce, check100) == 128);
+    assert(until(3, deuce, check100) == 192);
     cout << "dope";
     return 0;
 }
